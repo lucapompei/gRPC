@@ -1,0 +1,25 @@
+// Specify the syntax
+syntax = "proto3";
+
+// By default, the compiler generates all the Java code in a single Java file. 
+// The second line overrides this setting
+option java_multiple_files = true;
+
+// Specify the package
+package it.sysdata.grpc.proto.helloService;
+
+// Define the HelloRequest message
+message HelloRequest {
+	string firstName = 1;
+	string lastName = 2;
+}
+
+// Define the HelloResponse message
+message HelloResponse {
+	string greeting = 1;
+}
+
+// Define the service contract
+service HelloService {
+	rpc hello(HelloRequest) returns (HelloResponse);
+}
