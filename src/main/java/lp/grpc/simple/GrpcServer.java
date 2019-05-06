@@ -1,14 +1,14 @@
-package lp.grpc;
+package lp.grpc.simple;
 
 import java.io.IOException;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import lp.grpc.contants.ServerConstants;
-import lp.grpc.services.HelloServiceImpl;
+import lp.grpc.common.contants.ServerConstants;
+import lp.grpc.common.services.HelloServiceImpl;
 
 /**
- * The gRPC server
+ * The simple gRPC server
  * 
  * @author lucapompei
  *

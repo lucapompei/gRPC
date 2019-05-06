@@ -1,18 +1,10 @@
-package lp.grpc.proto.helloService;
+package lp.grpc.common.proto.helloService;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
-import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /**
@@ -20,9 +12,6 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  * Define the service contract
  * </pre>
  */
-@javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.20.0)",
-    comments = "Source: HelloService.proto")
 public final class HelloServiceGrpc {
 
   private HelloServiceGrpc() {}
@@ -30,30 +19,30 @@ public final class HelloServiceGrpc {
   public static final String SERVICE_NAME = "lp.grpc.proto.helloService.HelloService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<lp.grpc.proto.helloService.HelloRequest,
-      lp.grpc.proto.helloService.HelloResponse> getHelloMethod;
+  private static volatile io.grpc.MethodDescriptor<lp.grpc.common.proto.helloService.HelloRequest,
+      lp.grpc.common.proto.helloService.HelloResponse> getHelloMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "hello",
-      requestType = lp.grpc.proto.helloService.HelloRequest.class,
-      responseType = lp.grpc.proto.helloService.HelloResponse.class,
+      requestType = lp.grpc.common.proto.helloService.HelloRequest.class,
+      responseType = lp.grpc.common.proto.helloService.HelloResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<lp.grpc.proto.helloService.HelloRequest,
-      lp.grpc.proto.helloService.HelloResponse> getHelloMethod() {
-    io.grpc.MethodDescriptor<lp.grpc.proto.helloService.HelloRequest, lp.grpc.proto.helloService.HelloResponse> getHelloMethod;
+  public static io.grpc.MethodDescriptor<lp.grpc.common.proto.helloService.HelloRequest,
+      lp.grpc.common.proto.helloService.HelloResponse> getHelloMethod() {
+    io.grpc.MethodDescriptor<lp.grpc.common.proto.helloService.HelloRequest, lp.grpc.common.proto.helloService.HelloResponse> getHelloMethod;
     if ((getHelloMethod = HelloServiceGrpc.getHelloMethod) == null) {
       synchronized (HelloServiceGrpc.class) {
         if ((getHelloMethod = HelloServiceGrpc.getHelloMethod) == null) {
           HelloServiceGrpc.getHelloMethod = getHelloMethod = 
-              io.grpc.MethodDescriptor.<lp.grpc.proto.helloService.HelloRequest, lp.grpc.proto.helloService.HelloResponse>newBuilder()
+              io.grpc.MethodDescriptor.<lp.grpc.common.proto.helloService.HelloRequest, lp.grpc.common.proto.helloService.HelloResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "lp.grpc.proto.helloService.HelloService", "hello"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  lp.grpc.proto.helloService.HelloRequest.getDefaultInstance()))
+                  lp.grpc.common.proto.helloService.HelloRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  lp.grpc.proto.helloService.HelloResponse.getDefaultInstance()))
+                  lp.grpc.common.proto.helloService.HelloResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new HelloServiceMethodDescriptorSupplier("hello"))
                   .build();
           }
@@ -94,8 +83,8 @@ public final class HelloServiceGrpc {
 
     /**
      */
-    public void hello(lp.grpc.proto.helloService.HelloRequest request,
-        io.grpc.stub.StreamObserver<lp.grpc.proto.helloService.HelloResponse> responseObserver) {
+    public void hello(lp.grpc.common.proto.helloService.HelloRequest request,
+        io.grpc.stub.StreamObserver<lp.grpc.common.proto.helloService.HelloResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getHelloMethod(), responseObserver);
     }
 
@@ -105,8 +94,8 @@ public final class HelloServiceGrpc {
             getHelloMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                lp.grpc.proto.helloService.HelloRequest,
-                lp.grpc.proto.helloService.HelloResponse>(
+                lp.grpc.common.proto.helloService.HelloRequest,
+                lp.grpc.common.proto.helloService.HelloResponse>(
                   this, METHODID_HELLO)))
           .build();
     }
@@ -135,8 +124,8 @@ public final class HelloServiceGrpc {
 
     /**
      */
-    public void hello(lp.grpc.proto.helloService.HelloRequest request,
-        io.grpc.stub.StreamObserver<lp.grpc.proto.helloService.HelloResponse> responseObserver) {
+    public void hello(lp.grpc.common.proto.helloService.HelloRequest request,
+        io.grpc.stub.StreamObserver<lp.grpc.common.proto.helloService.HelloResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getHelloMethod(), getCallOptions()), request, responseObserver);
     }
@@ -165,7 +154,7 @@ public final class HelloServiceGrpc {
 
     /**
      */
-    public lp.grpc.proto.helloService.HelloResponse hello(lp.grpc.proto.helloService.HelloRequest request) {
+    public lp.grpc.common.proto.helloService.HelloResponse hello(lp.grpc.common.proto.helloService.HelloRequest request) {
       return blockingUnaryCall(
           getChannel(), getHelloMethod(), getCallOptions(), request);
     }
@@ -194,8 +183,8 @@ public final class HelloServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<lp.grpc.proto.helloService.HelloResponse> hello(
-        lp.grpc.proto.helloService.HelloRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<lp.grpc.common.proto.helloService.HelloResponse> hello(
+        lp.grpc.common.proto.helloService.HelloRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getHelloMethod(), getCallOptions()), request);
     }
@@ -221,8 +210,8 @@ public final class HelloServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_HELLO:
-          serviceImpl.hello((lp.grpc.proto.helloService.HelloRequest) request,
-              (io.grpc.stub.StreamObserver<lp.grpc.proto.helloService.HelloResponse>) responseObserver);
+          serviceImpl.hello((lp.grpc.common.proto.helloService.HelloRequest) request,
+              (io.grpc.stub.StreamObserver<lp.grpc.common.proto.helloService.HelloResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -230,7 +219,6 @@ public final class HelloServiceGrpc {
     }
 
     @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -246,7 +234,7 @@ public final class HelloServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return lp.grpc.proto.helloService.HelloServiceOuterClass.getDescriptor();
+      return lp.grpc.common.proto.helloService.HelloServiceOuterClass.getDescriptor();
     }
 
     @java.lang.Override

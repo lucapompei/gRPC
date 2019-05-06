@@ -1,9 +1,9 @@
-package lp.grpc.services;
+package lp.grpc.common.services;
 
 import io.grpc.stub.StreamObserver;
-import lp.grpc.proto.helloService.HelloRequest;
-import lp.grpc.proto.helloService.HelloResponse;
-import lp.grpc.proto.helloService.HelloServiceGrpc.HelloServiceImplBase;
+import lp.grpc.common.proto.helloService.HelloRequest;
+import lp.grpc.common.proto.helloService.HelloResponse;
+import lp.grpc.common.proto.helloService.HelloServiceGrpc.HelloServiceImplBase;
 
 /**
  * The service used to handle "hello" operations

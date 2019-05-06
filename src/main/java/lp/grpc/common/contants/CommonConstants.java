@@ -1,4 +1,4 @@
-package lp.grpc.contants;
+package lp.grpc.common.contants;
 
 /**
  * Utility class that expose common contants

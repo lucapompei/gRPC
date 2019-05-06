@@ -1,14 +1,14 @@
-package lp.grpc;
+package lp.grpc.simple;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import lp.grpc.contants.ServerConstants;
-import lp.grpc.proto.helloService.HelloRequest;
-import lp.grpc.proto.helloService.HelloResponse;
-import lp.grpc.proto.helloService.HelloServiceGrpc;
+import lp.grpc.common.contants.ServerConstants;
+import lp.grpc.common.proto.helloService.HelloRequest;
+import lp.grpc.common.proto.helloService.HelloResponse;
+import lp.grpc.common.proto.helloService.HelloServiceGrpc;
 
 /**
- * The gRPC client
+ * The simple gRPC client
  * 
  * @author lucapompei
  *
