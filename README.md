@@ -1,4 +1,4 @@
-# gRPC client/server test communication
+# gRPC client/server communication tests v.1.0.0
 
 [![Build Status](https://travis-ci.org/lucapompei/gRPC.svg?branch=master)](https://travis-ci.org/lucapompei/gRPC) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -11,6 +11,7 @@ Summary features
 -------
 
 - A simple gRPC client/server communication without authentication.
+- A gRPC client/server communication based on TLS authentication mechanism.
 
 
 Usage
