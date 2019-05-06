@@ -1,4 +1,4 @@
-package it.sysdata.grpc;
+package lp.grpc;
 
 import java.io.IOException;
 
@@ -7,7 +7,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import it.sysdata.grpc.proto.helloService.HelloResponse;
+import lp.grpc.GrpcClient;
+import lp.grpc.GrpcServer;
+import lp.grpc.proto.helloService.HelloResponse;
 
 /**
  * Test class prepared for testing the gRPC HelloService service

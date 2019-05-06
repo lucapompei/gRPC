@@ -1,11 +1,11 @@
-package it.sysdata.grpc;
+package lp.grpc;
 
 import java.io.IOException;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import it.sysdata.grpc.contants.ServerConstants;
-import it.sysdata.grpc.services.HelloServiceImpl;
+import lp.grpc.contants.ServerConstants;
+import lp.grpc.services.HelloServiceImpl;
 
 /**
  * The gRPC server

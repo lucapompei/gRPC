@@ -1,11 +1,11 @@
-package it.sysdata.grpc;
+package lp.grpc;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import it.sysdata.grpc.contants.ServerConstants;
-import it.sysdata.grpc.proto.helloService.HelloRequest;
-import it.sysdata.grpc.proto.helloService.HelloResponse;
-import it.sysdata.grpc.proto.helloService.HelloServiceGrpc;
+import lp.grpc.contants.ServerConstants;
+import lp.grpc.proto.helloService.HelloRequest;
+import lp.grpc.proto.helloService.HelloResponse;
+import lp.grpc.proto.helloService.HelloServiceGrpc;
 
 /**
  * The gRPC client

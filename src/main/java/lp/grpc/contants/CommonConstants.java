@@ -1,4 +1,4 @@
-package it.sysdata.grpc.contants;
+package lp.grpc.contants;
 
 /**
  * Utility class that expose common contants

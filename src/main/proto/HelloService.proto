@@ -6,7 +6,7 @@ syntax = "proto3";
 option java_multiple_files = true;
 
 // Specify the package
-package it.sysdata.grpc.proto.helloService;
+package lp.grpc.proto.helloService;
 
 // Define the HelloRequest message
 message HelloRequest {
