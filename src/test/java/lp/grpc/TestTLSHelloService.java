@@ -2,23 +2,25 @@ package lp.grpc;
 
 import java.io.IOException;
 
+import javax.net.ssl.SSLException;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import lp.grpc.common.proto.helloService.HelloResponse;
-import lp.grpc.simple.GrpcClient;
-import lp.grpc.simple.GrpcServer;
+import lp.grpc.tls.GrpcClient;
+import lp.grpc.tls.GrpcServer;
 
 /**
  * Test class prepared for testing the gRPC HelloService service based on the
- * simple client/server
+ * client/server that support TLS
  * 
  * @author lucapompei
  *
  */
-public class TestSimpleHelloService {
+public class TestTLSHelloService {
 
 
 
@@ -52,10 +54,12 @@ public class TestSimpleHelloService {
 
 	/**
 	 * Tests the hello gRPC service
+	 * 
+	 * @throws SSLException
 	 */
-	@DisplayName("Simple gRPC HelloService test")
+	@DisplayName("TLS-based gRPC HelloService test")
 	@Test
-	public void testHello() {
+	public void testHello() throws SSLException {
 		// Get a new hello client
 		GrpcClient client = new GrpcClient();
 		// Get the hello response querying the hello gRPC service
