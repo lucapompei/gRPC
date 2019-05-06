@@ -1,10 +1,42 @@
-# Test gRPC client/server communication
+# gRPC client/server test communication
+
+[![Build Status](https://travis-ci.org/lucapompei/gRPC.svg?branch=master)](https://travis-ci.org/lucapompei/gRPC) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+=============================
+
+This project shows some gRPC examples.
 
 
-1) Define all .proto files in src/main/proto
+Summary features
+-------
 
-2) Compile .proto files through maven plugins via: `mvn clean install`
+- A simple gRPC client/server communication without authentication.
 
-3) Take compiled .proto files in target/protobuf
 
-Some tests are provided
+Usage
+-------
+
+
+- Define all .proto files in src/main/proto
+
+- Compile .proto files through maven plugins via: `mvn clean install`
+
+- Take compiled .proto files in target/protobuf
+
+
+License
+-------
+
+  Copyright (C) 2019 lucapompei
+ 
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
