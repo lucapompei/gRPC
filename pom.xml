@@ -20,7 +20,7 @@
 		<grpc.version>1.20.0</grpc.version>
 
 		<!-- Compiler -->
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<os-maven-plugin.version>1.6.2</os-maven-plugin.version>
 		<protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
